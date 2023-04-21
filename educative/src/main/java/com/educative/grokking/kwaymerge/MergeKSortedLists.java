@@ -1,7 +1,7 @@
 package com.educative.grokking.kwaymerge;
 
-import com.educative.grokking.helper.LinkedListNode;
 import com.educative.grokking.helper.LinkedList;
+import com.educative.grokking.helper.LinkedListNode;
 import com.educative.grokking.helper.ListHeapNode;
 
 import java.util.Comparator;
