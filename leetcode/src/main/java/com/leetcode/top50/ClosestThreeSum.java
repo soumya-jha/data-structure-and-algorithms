@@ -33,4 +33,5 @@ public class ClosestThreeSum {
         ClosestThreeSum sum = new ClosestThreeSum();
         System.out.println(sum.threeSumClosest(new int[]{-1, 2, 1, -4}, 1));
     }
+
 }
