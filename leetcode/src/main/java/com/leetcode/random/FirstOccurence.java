@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.random;
 
 public class FirstOccurence {
     public static void main(String[] args) {
@@ -12,15 +12,15 @@ public class FirstOccurence {
     public int strStr(String haystack, String needle) {
         int nedLength = needle.length();
         char[] arr = haystack.toCharArray();
-        String match = "";
+        StringBuilder match = new StringBuilder();
         int first = 0;
         for (int second = 0; second < arr.length; second++) {
-            match += arr[second];
+            match.append(arr[second]);
             if (second >= nedLength - 1) {
-                if (match.equals(needle)) {
+                if (match.toString().equals(needle)) {
                     return first;
                 } else {
-                    match = match.substring(1);
+                    match = new StringBuilder(match.substring(1));
                     first++;
                 }
             }
