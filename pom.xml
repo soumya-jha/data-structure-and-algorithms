@@ -15,7 +15,6 @@
         <module>udemy</module>
         <module>hackerRank</module>
         <module>geeksforgeeks</module>
-        <module>designpatterns</module>
     </modules>
 
     <properties>
