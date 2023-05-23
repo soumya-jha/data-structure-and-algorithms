@@ -32,13 +32,4 @@ public class BalancedBinaryTree {
         System.out.println(new BalancedBinaryTree().isBalanced(root));
     }
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-    }
 }
