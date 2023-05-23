@@ -1,17 +1,6 @@
 package org.techinterviewhandbook.grind75;
 
 public class LinkedListCycle {
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
-
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null)
             return false;
