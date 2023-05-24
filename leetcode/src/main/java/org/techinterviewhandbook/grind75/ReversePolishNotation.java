@@ -40,12 +40,13 @@ public class ReversePolishNotation {
     }
 
     public static void main(String[] args) {
-        System.out.println(new ReversePolishNotation().evalRPN(new String[]{"2", "1", "+", "3", "*"}));
-        System.out.println(new ReversePolishNotation().evalRPN(new String[]{"4", "13", "5", "/", "+"}));
-        System.out.println(new ReversePolishNotation().evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
+        ReversePolishNotation rpn = new ReversePolishNotation();
+        System.out.println(rpn.evalRPN(new String[]{"2", "1", "+", "3", "*"}));
+        System.out.println(rpn.evalRPN(new String[]{"4", "13", "5", "/", "+"}));
+        System.out.println(rpn.evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
         //Error scenarios
-        System.out.println(new ReversePolishNotation().evalRPN(null));
-        System.out.println(new ReversePolishNotation().evalRPN(new String[]{"2", "1", "+", "*"}));
-        System.out.println(new ReversePolishNotation().evalRPN(new String[]{"2", "1", "+", "3", "*", "0", "/"}));
+        System.out.println(rpn.evalRPN(null));
+        System.out.println(rpn.evalRPN(new String[]{"2", "1", "+", "*"}));
+        System.out.println(rpn.evalRPN(new String[]{"2", "1", "+", "3", "*", "0", "/"}));
     }
 }
